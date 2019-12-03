@@ -1,0 +1,65 @@
+/*Body*/
+body{
+    color: #fff;
+    background: #000000;
+}
+*{
+    transition:all 0.1s ease-in-out;
+    margin:0px;
+    padding:0px;
+}
+main{
+    display:block;
+}
+/*Navbar*/
+header {
+    height: 100px;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+       margin: auto 0;
+}
+header #logo{
+    width: 178px;
+    height: 55px;
+    margin: auto 0;
+}
+header nav a{
+    padding: 7px 10px 7px 27px;
+    color: #e5edf4;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 200;
+}
+header nav a:hover{
+    background-color: #d9252b;
+    border-bottom: 5px solid red;
+}
+header nav ul:first-child a:first-child{
+   color: #a8a8a8;
+   font-size:14px;
+}
+nav ul{
+    list-style: none;
+    cursor: default;
+    justify-content: flex-end;
+    display: flex;
+    margin: 15px 0px;
+}
+/**/
+
+/*main*/
+section:first-child{
+    background-image: url("../images/mercedes-header-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+section:first-child
+.gradient{
+    background:linear-gradient(#000, transparent 150px, transparent calc(100% - 150px), #000);
+    height:100%;
+}
