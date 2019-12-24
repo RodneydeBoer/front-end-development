@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:100,200,300,400,500,600,700,800,900&display=swap');
+*{
+    transition:all 0.1s ease-in-out;
+    margin:0px;
+    padding:0px;
+}
+/*Body*/
+body{
+    color: #fff;
+    background: #000000;
+    font-weight: 200;
+    font-family: 'Rokkitt', serif;
+}
+main{
+    display:block;
+}
+a:visited {
+    color: inherit;
+}
+   .amg-lijn{
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        border: none;
+        background: #d9252b;
+    }
+#slide2,#slide3{
+    display:none;
+}
+@media screen and (min-width: 1250px){
+    .iconburger{
+        display: none;
+    }
+/*Navbar*/
+    header {
+        height: 100px;
+        width: 78%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav{
+        margin: auto 0;
+    }
+    header #logo{
+        width: 178px;
+        height: 55px;
+        margin: auto 0;
+    }
+    header nav a{
+        padding: 7px 10px 7px 27px;
+        color: #e5edf4;
+        text-decoration: none;
+        text-align: right;
+        font-weight: 200;
+    }  
+    header nav a:hover{
+        background-color: #d9252b;
+        border-bottom: 5px solid red;
+    }
+    header nav ul:first-child a:first-child{
+       color: #a8a8a8;
+       font-size:14px;
+    }
+    nav ul{
+        list-style: none;
+        cursor: default;
+        justify-content: flex-end;
+        display: flex;
+        margin: 15px 0px;
+    }
+    /**/
+
+    /*main*/
+    section:first-child{
+        background-image: url("../images/mercedes-header-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+    }
+    .gradient{
+        background:linear-gradient(#000, transparent 150px, transparent calc(100% - 150px), #000);
+        height:80vh;
+        padding-top:35px;
+    }
+    .intro article{
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: 15px;
+        margin-left: 150px;
+        width: 460px;
+        padding:14px;
+    }
+    .intro h1{
+        font-size:43px;
+        line-height: 48px;
+        margin: 20px 0px;
+        font-weight: 200;
+    }
+ 
+    .intro p{
+        font-size:18px;
+        margin-top:15px;
+    }
+
+    .amg-button{
+        border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+        text-decoration: none;
+        border: 1px solid #d9252b;
+        background-color: #d9252b;
+        display: inline-block;
+        font-weight: 200;
+    }
+    .amg-button:hover{
+        border: 1px solid #d9252b;
+        background-color: #d9252b;
+        box-shadow: 0 0 16px 0 #d9252b;
+    }
+}
+@media screen and (max-width:1250px){
+    main{
+    margin: 20px;
+    }
+    header.topnav {
+        height: 80px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-left:25px;
+    }
+    nav#mijnlinks {
+        display: none;
+        border-top: 6px solid #d9252b;
+        font-size: 17px;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+        background-color:#1f1f1f;
+    }
+    nav#mijnlinks ul{
+        list-style:none;
+    }
+    nav#mijnlinks ul li a{
+        color:white; 
+        display: block;
+        padding: 14px 31px;
+        border-bottom: 1px solid #3c3c3c;
+        text-decoration: none;
+    }
+    div.onderelkaar{
+        width: 30%;
+        text-align: end;
+        margin-right: 35px;
+        height: 100%;
+        flex: auto;
+    }
+    ul.iconmenu{
+        margin-top: 10px;
+        vertical-align: top;
+    }
+    ul.iconmenu li{
+        display: inline-block;
+        margin-left: 30px;
+        vertical-align: top;
+        font-size:20px;
+        color:#a8a8a8;
+    }
+    div.userdeel{
+        -webkit-transform: skewX(-23deg);
+        transform: skewX(-23deg);
+        border-left: 2px solid red;
+        height: 80px;
+        width: 50px;
+    }
+    .userdeel i{
+        -webkit-transform: skewX(23deg);
+        transform: skewX(23deg);
+        font-size:30px;
+    }
+    .userdeel a{
+        margin: 29px 15px;
+        display: block;
+    }
+    header nav{
+        margin: auto 0;
+    }
+    header #logo{
+        width: 141px;
+        height: 100%;
+        margin: auto 0;
+        float:left;
+    }  
+    /*    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }*/
+    .iconburger{
+        font-size:20px;
+        vertical-align:super;
+    }
+    .iconburger i{
+        margin-top:15px;
+    }
+    #mijnlinks a:hover {
+        background-color: #ddd;
+        color: red;
+    }
+
+    /*.active {
+        background-color: #4CAF50;
+        color: white;
+    }*/
+}
+@media screen and (max-width: 355px){
+    ul.iconmenu li {
+    margin-left: 15px;
+    }
+    div.onderelkaar {
+    margin-right: 20px;
+    }
+}
