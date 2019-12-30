@@ -5,11 +5,32 @@
     padding:0px;
 }
 /*Body*/
+article, section header, .agenda footer p, footer section:nth-child(2){
+    width: 90%;
+    margin: auto;
+}
+section{
+    margin-bottom: 50px;
+    margin-top:15px;
+}
 body{
     color: #fff;
     background: #000000;
     font-weight: 200;
     font-family: 'Rokkitt', serif;
+}
+.amg-button{
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 13px;
+    text-decoration: none;
+    border: 1px solid #d9252b;
+    background-color: #d9252b;
+    display: inline-block;
+    font-weight: 200;
+    margin: 10px 0px;
 }
 main{
     display:block;
@@ -21,9 +42,7 @@ img, video{
     width:100%;
     height: auto;
 }
-p{
-    font-weight: 100;
-}
+
 .amg-lijn{
     margin: 5px 0px;
     display: block;
@@ -48,18 +67,128 @@ p{
     font-weight: 200;
     margin: 10px 0px;
 }
+
+footer section:nth-child(1){
+    background: linear-gradient(to bottom, #262626 0%, #171717 100%);
+}
+/*Tekst*/
+.intro h1 {
+    font-weight: 200;
+    margin:15px 0px;
+}
+h2{
+    font-weight: 200;
+    margin:15px 0px;
+}
+h3{
+    font-weight: 200;
+    margin:15px 0px;
+}
+p{
+    font-weight: 100;
+}
 .intro h1{
         font-size:2.6em;
-    }
-@media screen and (min-width: 1250px){
+}
+p.beschrijving a{
+    color:white;
+    cursor: pointer;
+}
+.vehicles p{
+    color: #a8a8a8;
+    text-align: left;
+    font-size:14px;
+}
+.vehicles p a{
+    color:white;
+    cursor: pointer;
+}
+section.verbruik{
+    color:#e8e8e8;
+    text-align: left;
+    font-style: italic;
+}
+.wit{
+    color:white;
+    font-weight: bold;
+}
+p.beschrijving {
+    color: #a8a8a8;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+}
+section.agenda p:nth-child(2) {
+    color: #adadad;
+    FONT-WEIGHT: 100;
+}
+footer section:nth-child(2) p{
+    margin: 10px 0px;
+}
+footer section:nth-child(1) a{
+    text-decoration: none;
+}
+footer section:nth-child(2) a{
+    color: white;
+}
+/*Footer*/
+footer section:nth-child(2){
+    font-size:14px;
+}
+footer section ul:nth-child(3) li:after {
+    content: " | ";
+    margin: 0 15px;
+}
+footer section{
+    color:#999999;
+    margin-bottom: 0px!important;
+}
+footer section:nth-child(1) ul li{
+    display: inline-block;
+}
+footer section:nth-child(1){
+    background: linear-gradient(to bottom, #262626 0%, #171717 100%);
+    padding: 0 5%;
+}
+footer section:nth-child(1) ul{
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+footer section:nth-child(1) ul li{
+    display: inline-block;
+}
+ footer section ul:nth-child(1){
+    float: left;
+    text-align: left;
+}
+footer section ul:nth-child(2){
+    font-size: 30px;
+    color: #999999;
+    text-align: right; 
+}
+footer section ul:nth-child(3){
+    color: #999999;
+    text-align: right; 
+}
+/*Tekst*/
+footer section:nth-child(2){
+    font-size: 14px;
+    color: #999999;
+    padding: 30px 5%;
+    display: inline-block;
+}
+@media screen and (min-width: 1280px){
     .slidefoto{
         display:none;
     }
     .iconburger{
         display: none;
     }
-/*Navbar*/
-    header {
+    /*Navbar*/
+    header.topnav {
         height: 100px;
         width: 78%;
         margin: auto;
@@ -99,7 +228,7 @@ p{
     /**/
 
     /*main*/
-    section:first-child{
+    .intro{
         background-image: url("../images/mercedes-header-1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -147,70 +276,12 @@ p{
         box-shadow: 0 0 16px 0 #d9252b;
     }
 }
-@media screen and (max-width:1024px){
-    .grijs{
-        background-color: #202020;;
+@media screen and (max-width: 1280px){
+    header.topnav span{
+        margin-left:8px;
+        font-size: 14px;
+        color: #a8a8a8;
     }
-}
-@media screen and (max-width: 770px){
-    
-    .agenda{
-        margin-bottom: 10px!important;
-    }
-    .agenda-items img{
-        display: none;
-    }
-    .agenda-items p{
-        font-weight:100;
-    }
-    .agenda-items article p,.agenda-items article h3{
-        width: 90%;
-        display: inline-block;
-        margin-right: 10px;
-    }
-    .agenda-items article .amg-button-mobile{
-        display: inline-block;
-        border: none;     
-        margin: 10px 0px;
-        font-size: 30px;
-        vertical-align: top;
-        margin: auto;
-        text-decoration: none;
-    }
-    .agenda-items article{
-        border-top: 1px solid #494949;
-        padding-top: 30px;
-        padding-bottom: 30px
-    }
-    .agenda h2{
-        width: 85%;
-        display: inline-block;
-    }
-    .agenda .amg-button-mobile{
-        display: inline-block;
-        border: none;
-        border-radius: 1px;
-        color: #fff;
-        cursor: pointer;
-        padding: 0px 10px;
-        text-decoration: none;
-        border: 1px solid #d9252b;
-        background-color: #d9252b;
-        font-weight: 200;
-        margin: 10px 0px;
-        font-size: 35px;
-    }
-    .agenda .amg-button{
-        display: none;
-    }
-}
-@media screen and (max-width:500px){
-    article, section header, .agenda footer p{
-        width: 90%;
-        margin: auto;
-    }
-
-    /*HEADER*/
     header.topnav {
         height: 80px;
         width: auto;
@@ -294,24 +365,194 @@ p{
         background-color: #ddd;
         color: red;
     }
+    
+    .agenda{
+        margin-bottom: 10px!important;
+    }
+    .agenda-items p{
+        font-weight:100;
+    }
+    .agenda-items article p,.agenda-items article h3{
+        width: 90%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .agenda-items article{
+        border-top: 1px solid #494949;
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+   
+    
+}
+@media screen and (min-width: 1023px){
+
+    .vehicles, .about-amg{
+        grid-template-columns: repeat(4, minmax(25%, 1fr) )!important;
+    }
+    .vehicles header,.about-amg header{
+        grid-row: 1;
+    }
+    .vehicles article, .about-amg article{
+        grid-row: 2;
+    }
+    article, section header, .agenda footer p, footer section:nth-child(2){
+        width: 80%;
+        margin: auto;
+    }
+    .agenda{
+        width:80%;
+        margin: auto;
+        display: block;
+    }
+    .schuinvlak{
+        position: absolute;
+        width: 468px;
+        height: 77%;
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-transform: skew(-36deg);
+        transform: skew(-36deg);
+        -webkit-transform-origin: top;
+    }
+    .schuinvlak p, .schuinvlak hr, .schuinvlak a, .schuinvlak h2 {
+        -webkit-transform: skew(36deg);
+        transform: skew(36deg);
+        -webkit-transform-origin: top;
+        max-width: 300px;
+    }
+    footer section:nth-child(1){
+        display: flex;
+    }
+    footer section ul{
+        width: auto;
+    }
+    .agenda-items{
+        display: grid;
+        grid-column-gap: 15px;
+        grid-template-columns: repeat(4, minmax(25%, 1fr) );
+        padding: 0 10%;
+    }
+    .agenda-items article{
+        margin: unset;
+        width: 100% ;
+    }
+    
+}
+@media screen and (max-width:1022px){
+    .schuinvlak{
+        padding: 25px 0px;
+        width: 80%;
+        margin: auto;
+    }
+    footer section ul:nth-child(1){
+        width: 50%;
+        float: left;
+        text-align: left;
+        display: inline-block;
+    }
+    footer section ul:nth-child(2){
+        font-size: 30px;
+        color: #999999;
+        width: 50%;
+        float: left;
+        text-align: right; 
+        display:inline-block;
+    }
+    footer section ul:nth-child(3) {
+        color: #999999;
+        text-align: center;
+        width: 100%;
+    }
+    .agenda-items article{
+        display: grid;
+        grid-column-gap: 15px;
+        grid-template-columns: repeat( auto-fit, minmax(25%, 1fr) );
+    }
+    .agenda-items img{
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+    .agenda-items article h3, .agenda-items article p{
+        grid-column: 2 / span 2;
+    }
+    .agenda-items a{
+        grid-column: 4;
+        margin: auto;
+        grid-row: 1 / span 2;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    /* Alles */
+    .grijs{
+        background-color: #202020;;
+    }
+    /*header*/
+    /*main*/
+    /*Footer*/ 
+}
+@media screen and (min-width:767px){
+    .about-amg article{
+        margin: unset;
+    }
+    .agenda .amg-button-mobile{
+        display: none;
+    }
+    .vehicles, .about-amg{
+        display: grid;
+        grid-column-gap: 15px;
+        grid-row-gap:30px;
+        grid-template-columns: repeat(2, minmax(50%, 1fr) );
+        padding: 0 10%;
+    }
+    .vehicles header,.about-amg header{
+        grid-column: 1 / span 2;
+    }
+    .vehicles article,.vehicles header, .about-amg article, .about-amg header{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 766px){
+
+    .agenda h2{
+        width: 85%;
+        display: inline-block;
+    }
+    /*HEADER*/
+    header.topnav span{
+        display: none;
+    } 
     /**/
     /*MAIN*/
-    section{
-        margin-bottom: 50px;
-        margin-top:15px;
+    .agenda-items img{
+        display: none;
     }
-    .amg-button{
+    .agenda .amg-button-mobile{
+        display: inline-block;
         border: none;
         border-radius: 1px;
         color: #fff;
         cursor: pointer;
-        padding: 5px 13px;
+        padding: 0px 10px;
         text-decoration: none;
         border: 1px solid #d9252b;
         background-color: #d9252b;
-        display: inline-block;
         font-weight: 200;
         margin: 10px 0px;
+        font-size: 35px;
+    }
+
+    .agenda-items article .amg-button-mobile{
+        display: inline-block;
+        border: none;     
+        margin: 10px 0px;
+        font-size: 30px;
+        vertical-align: top;
+        margin: auto;
+        text-decoration: none;
+    }
+    .agenda .amg-button{
+        display: none;
     }
     .slidefoto{
         width: 100%;
@@ -328,7 +569,7 @@ p{
     .agenda img{
         margin-top: 20px;
     }
-    /*Tekst*/
+    
     .intro h1 {
         font-size: 1.5rem;
         line-height: 1.5rem;
@@ -347,40 +588,39 @@ p{
         font-weight: 200;
         margin:15px 0px;
     }
-    p.beschrijving{
-        color: #a8a8a8;
+}
+@media screen and (max-width: 480px){
+    footer section:nth-child(1){
+        background: linear-gradient(to bottom, #262626 0%, #171717 100%);
+    }
+    footer section:nth-child(1) ul{
+        padding: 30px 0;
         text-align: center;
-        padding-left: 10px;
-        padding-right:10px;
+        width: 100%;
+        margin: auto;
+    }
+    footer section:nth-child(1) ul li{
+        display: inline-block;
+    }
+    footer section ul:nth-child(2){
+        font-size: 30px;
+        color: #999999;
+        border-bottom: 1px solid #494949;
+    }
+     footer section ul:nth-child(1){
+        border-bottom: 1px solid #494949;
+    }
+    /*Tekst*/
+    footer section:nth-child(2){
         font-size:14px;
+        color:#999999;
     }
-    p.beschrijving a{
-        color:white;
-        cursor: pointer;
+    footer section:nth-child(2) p{
+        margin: 10px 0px;
     }
-    .vehicles p{
-        color: #a8a8a8;
-        text-align: left;
-        font-size:14px;
+    footer section:nth-child(2) a{
+        color: white;
     }
-    .vehicles p a{
-        color:white;
-        cursor: pointer;
-    }
-    section.verbruik{
-        color:#e8e8e8;
-        text-align: left;
-        font-style: italic;
-    }
-    .wit{
-        color:white;
-        font-weight: bold;
-    }
-    section.agenda p:nth-child(2) {
-        color: #adadad;
-        FONT-WEIGHT: 100;
-    }
-    /**/
 }
 @media screen and (max-width: 355px){
     ul.iconmenu li {
