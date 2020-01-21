@@ -11,242 +11,260 @@
         <title>Rodney AMG</title>
     </head>
     <body>
-        <header class="topnav" id="boven">
-            <a href="#home" class="active"><img id="logo" src="./images/amg-logo.svg"/></a>
-            <div class="onderelkaar">
-                <ul class="iconmenu" id="onderelkaar">
+        <header>
+            <!-- Het logo -->
+            <a href="#"><img src="./images/amg-logo.svg"/></a>
+            <!-- topmenu met icons -->
+            <div>
+                <ul>
                     <li><a href="#"><i class="fa fa-info-circle"></i><span>Provider/Privacy</span></a></li>
                     <li><a href="#"><i class="fa fa-search"></i></a></li>
                 </ul>
                 <!-- Hamburger menu -->
-                <a href="#" id="onderelkaar" class="iconburger" onclick="myFunction()"><i class="fa fa-bars"></i> </a>
+                <a href="#" onclick="myFunction()"><i class="fa fa-bars"></i> </a>
+                <!-- onderstaande ID moet blijven staan voor javascript. Niet voor css -->
                 <nav id="mijnlinks">
-                <ul>
-                    <li><a href="#">Driving Performance</a></li>
-                    <li><a href="#">Vehicles</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Get your AMG</a></li>
-                    <li><a href="#">Owner</a></li>
-                    <li><a href="#">Career</a></li>
-                </ul>
-            </nav>
+                    <ul>
+                        <li>
+                            <a  href="#">Driving Performance</a>
+                        </li>
+                        <li>
+                            <a href="#">Vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Get your AMG</a>
+                        </li>
+                        <li>
+                            <a href="#">Owner</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- hoofdmenu die een dropdown wordt op telefoon -->
-            
-            <div class="userdeel">
-                <a href="#" class="account"><i class="fa fa-user"></i></a>
+            <!-- Het user-icoon in de header -->
+            <div>
+                <a href="#"><i class="fa fa-user"></i></a>
             </div>
         </header>
         <main>
-            <!-- Slides worden aangeduid met een ID -->
-            <section class="intro"  id="slide1">
-                <div class="gradient">
+            <!-- Slides worden aangeduid met een ID voor javascript en niet voor css-->
+            <section id="slide1">
+                <!-- div die zorgt voor de gradient -->
+                <div>
                     <article>
                         <p>World Premiere </p>
-                        <hr class="amg-lijn">
+                        <hr>
                         <h1>The new Mercedes-AMG GLA 35 4-MATIC</h1>
                         <a href="#" class="amg-button">Learn more</a>
                     </article>
-               </div>
-                    <footer>
-                        <img class="slidefoto" src="./images/mobile/slide1-mobile.png">
-                        <p class="beschrijving">Kraftstoffverbrauch kombiniert: 11.9 l/100 km | CO<sub>2</sub>-Emissionen kombiniert: 273 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-                    </footer>
+                </div>
+                <footer>
+                    <img src="./images/mobile/slide1-mobile.png">
+                    <p class="beschrijving">Kraftstoffverbrauch kombiniert: 11.9 l/100 km | CO<sub>2</sub>-Emissionen kombiniert: 273 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </footer>
             </section>
-            <section class="verbruik">
+            <!-- section 2 -->
+            <section>
                 <article>
                     <p><span class="wit">*)</span> The stated fuel consumption and CO2 emission figures are provisional, were determined by the technical service for the certification process in accordance with the WLTP test procedure and correlated as NEDC figures. No EC type approval or certificate of conformity with official figures is yet available. There may be differences between the stated figures and the official figures.</p>
                 </article>
             </section>
-            <section class="vehicles">
+            <!-- section 3 -->
+            <section>
                 <header>
                     <h2>Vehicles </h2>
                 </header>
+                <!-- classes worden alleen gebruikt voor javascript om de carrousel te realiseren -->
                 <article class="vehicle1">
-                    <img class="" src="./images/mobile/c43-amg-mobile.jpg">
+                    <img src="./images/mobile/c43-amg-mobile.jpg">
                     <h3>Mercedes-AMG C 43 4MATIC sedan</h3>
-                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
                 </article>
                 <article class="vehicle1">
-                    <img class="" src="./images/glc-amg-intro.jpg">
+                    <img src="./images/glc-amg-intro.jpg">
                     <h3>Mercedes-AMG GLC 43 4MATIC SUV</h3>
-                    <p>Kraftstoffverbrauch kombiniert: 10.6 - 10.2 l/100 km | CO<sub class="amg-e-sub">2</sub>-Emissionen kombiniert: 242 - 234 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" target="_blank">Emissionsangabe</a> [1]</p>
+                    <p>Kraftstoffverbrauch kombiniert: 10.6 - 10.2 l/100 km | CO<sub>2</sub>-Emissionen kombiniert: 242 - 234 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" target="_blank">Emissionsangabe</a> [1]</p>
                 </article>
                 <article class="vehicle1">
-                    <img class="" src="./images/glc-coupe-intro.jpg">
+                    <img src="./images/glc-coupe-intro.jpg">
                     <h3>Mercedes-AMG C 43 4MATIC sedan</h3>
-                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
                 </article>
                 <article class="vehicle1">
-                    <img class="" src="./images/auto-overzicht-intro.jpg">
+                    <img src="./images/auto-overzicht-intro.jpg">
                     <h3>Mercedes-AMG C 43 4MATIC sedan</h3>
-                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
                 </article>
-                <footer>
-                    
-                </footer>
             </section>
-            <div class="grijs">
-                <section class="agenda">
-                    <div class="schuinvlak">
-                        <header><p>Mercedes-AMG Calendar 2020</p>
-                        <hr class="amg-lijn">
-                        <h2>GT HYPERREALISM</h2>
-                        <a href="#" class="amg-button-mobile">></a>
-                        <p>Let yourself be carried off into a multi-faceted world in which photo artist and "AMG Friend of the Brand" Michael von Hassel delivers his unique take on the AMG DNA. You may order the AMG Calendar 2020 here:</p>
-                        <a href="#" class="amg-button">> Order now</a>
-                    </header>
-                    <article>
-                       
-                    </article>
+            <!-- Section 4 -->
+            <section>
+                <!-- Schuine zwarte overlay -->
+                <div class="schuinvlak">
+                    <!-- rechte inhoud van overlay -->
+                    <div class="rechtvlak">
+                        <header>
+                            <p>Mercedes-AMG Calendar 2020</p>
+                            <hr>
+                            <h2>GT HYPERREALISM</h2>
+                            <a href="#" class="amg-button-mobile">></a>
+                            <p>Let yourself be carried off into a multi-faceted world in which photo artist and "AMG Friend of the Brand" Michael von Hassel delivers his unique take on the AMG DNA. You may order the AMG Calendar 2020 here:</p>
+                            <a href="#" class="amg-button">> Order now</a>
+                        </header>
+                    </div>
                 </div>
                 <footer>
-                    <img class="autofoto" src="./images/mobile/amg-gtr-mobile.jpg">
-                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
+                    <img src="./images/mobile/amg-gtr-mobile.jpg">
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
                 </footer>
             </section>
-            <section class="agenda-items">
+            <!-- section 5 -->
+            <section>
+                <!-- classes worden alleen gebruikt voor javascript om de carrousel te realiseren -->
                 <article class="agenda1">
-                    <img class="" src="./images/mobile/c43-amg-mobile.jpg">
+                    <img src="./images/mobile/c43-amg-mobile.jpg">
                     <h3>AMG Winter Sporting</h3>
                     <p>The AMG Driving Academy events are organized by the AMG Experiences GmbH, which is an external and independent travel operator and not part of the Daimler corporation. *You will be redirected to the tour operator AMG Experiences GmbH.</p>
                     <a href="#" class="amg-button-mobile">></a>
                 </article>
                 <article class="agenda2">
-                    <img class="" src="./images/mobile/c43-amg-mobile.jpg">
+                    <img src="./images/mobile/c43-amg-mobile.jpg">
                     <h3>AMG Racetrack-Trainings*</h3>
                     <p>The AMG Driving Academy events are organized by the AMG Experiences GmbH, which is an external and independent travel operator and not part of the Daimler corporation. *You will be redirected to the tour operator AMG Experiences GmbH. </p>
                     <a href="#" class="amg-button-mobile">></a>
                 </article>
                 <article class="agenda3">
-                    <img class="" src="./images/mobile/c43-amg-mobile.jpg">
+                    <img src="./images/mobile/c43-amg-mobile.jpg">
                     <h3>AMG Private Lounge</h3>
                     <p> The exclusive community for Mercedes-AMG Owners.</p>
                     <a href="#" class="amg-button-mobile">></a>
                 </article>
                 <article class="agenda4">
-                    <img class="" src="./images/mobile/c43-amg-mobile.jpg">
+                    <img src="./images/mobile/c43-amg-mobile.jpg">
                     <h3>AMG Performance Wear</h3>
                     <p> The exclusive community for Mercedes-AMG Owners.</p>
                     <a href="#" class="amg-button-mobile">></a>
                 </article>
+            </section>
+            <!-- section 6 -->
+            <section>
+                <header>
+                    <p>Inside AMG</p>
+                    <hr>
+                </header>
+                <!-- classes worden alleen gebruikt voor javascript om de carrousel te realiseren -->
+                <article class="video1">
+                    <h2>C = Cylinders | Exclusive insights into the development!</h2>
+                    <a href="#" class="amg-button-wit">View video</a>
+                    <!-- bron video: mercedes-amg site -->
+                    <video preload="metadata" autoplay="" loop="" muted="" playsinline="">
+                        <source data-src="https://www.mercedes-amg.com/dam/hq/content-pages/home/INSIDEAMG_E03_Intro.mp4/_jcr_content/renditions/original.1560364519464./INSIDEAMG_E03_Intro.mp4" type="video/mp4" src="https://www.mercedes-amg.com/dam/hq/content-pages/home/INSIDEAMG_E03_Intro.mp4/_jcr_content/renditions/original.1560364519464./INSIDEAMG_E03_Intro.mp4">
+                    </video>
+                </article>
+                <!--  <article class="video2">
+                    <h2>B = Brakes | Felix vs. the Brake expert!</h2>
+                    <a href="#" class="amg-button-wit">View video</a>
+                    <img src="./images/mobile/video2-mobile.jpg">
+                </article>
+                <article class="video3">
+                    <h2>A = Acceleration | Can Felix beat the RACE START?</h2>
+                    <a href="#" class="amg-button-wit">View video</a>
+                    <img src="./images/mobile/video3-mobile.jpg">
+                </article> -->
+            </section>
+            <!-- section 7 -->
+            <section>
+                <header>
+                    <hr>
+                    <h2>Press Club</h2>
+                </header>
+                 <!-- classes worden alleen gebruikt voor javascript om de carrousel te realiseren -->
+                <article class="press1">
+                    <img src="./images/mobile/gla-43-mobile.jpg">
+                    <h3>The new Mercedes-AMG GLA 35 4MATIC</h3>
+                    <p> The range of compact 35-series entry-level models to the world of Mercedes-AMG is now complete. The seven-member family extends from the A-Class as a hatchback and notchback (in a long version for China) to the CLA Coupé and Shooting Brake and the seven-seater GLB – and is now rounded off by the new GLA 35 4MATIC (combined fuel consumption 7.5-7.4 l/100 km; combined CO2 emissions 171-170 g/km). </p>
+                    <p>Kraftstoffverbrauch kombiniert: 7.5 - 7.4 l/100 km | CO<sub>2</sub>-Emissionen kombiniert: 171 - 170 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </article>
+                <!-- <article class="press2">
+                    <img src="./images/mobile/gls-amg-mobile.jpg">
+                    <h3>The new Mercedes-AMG GLS 63 4MATIC+ [2]</h3>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </article>
+                <article class="press3">
+                    <img src="./images/mobile/glc-amg-mobile.jpg">
+                    <h3>The new Mercedes-AMG GLE 63 4MATIC+ Models [2]</h3>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </article>
+                <article class="press4">
+                    <img src="./images/mobile/schoenen-mobile.jpg">
+                    <h3>Santoni designs new sneaker collection for Mercedes-AMG </h3>
+                    <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </article> -->
                 <footer>
+                    
                 </footer>
             </section>
-        </div>
-        <section class="video">
-            <header>
-                <p>Inside AMG</p>
-                <hr class="amg-lijn">
-            </header>
-            <article class="video1">
-                <h2>C = Cylinders | Exclusive insights into the development!</h2>
-                <a href="#" class="amg-button-wit">View video</a>
-                <!-- bron video: mercedes-amg site -->
-                <video class="amg-e-lazy-video__video amg-js-lazy-video__video" preload="metadata" autoplay="" loop="" muted="" playsinline="">
-                    <source data-src="https://www.mercedes-amg.com/dam/hq/content-pages/home/INSIDEAMG_E03_Intro.mp4/_jcr_content/renditions/original.1560364519464./INSIDEAMG_E03_Intro.mp4" type="video/mp4" src="https://www.mercedes-amg.com/dam/hq/content-pages/home/INSIDEAMG_E03_Intro.mp4/_jcr_content/renditions/original.1560364519464./INSIDEAMG_E03_Intro.mp4">
-                </video>
-            </article>
-            <!--  <article class="video2">
-                <h2>B = Brakes | Felix vs. the Brake expert!</h2>
-                <a href="#" class="amg-button-wit">View video</a>
-                <img class="" src="./images/mobile/video2-mobile.jpg">
-            </article>
-            <article class="video3">
-                <h2>A = Acceleration | Can Felix beat the RACE START?</h2>
-                <a href="#" class="amg-button-wit">View video</a>
-                <img class="" src="./images/mobile/video3-mobile.jpg">
-            </article> -->
-            <footer>
-            </footer>
-        </section>
-        <section class="press-club">
-            <header>
-                <hr class="amg-lijn">
-                <h2>Press Club</h2>
-            </header>
-            <article class="press1">
-                <img class="" src="./images/mobile/gla-43-mobile.jpg">
-                <h3>The new Mercedes-AMG GLA 35 4MATIC</h3>
-                <p>Kraftstoffverbrauch kombiniert: 7.5 - 7.4 l/100 km | CO<sub class="amg-e-sub">2</sub>-Emissionen kombiniert: 171 - 170 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-            </article>
-            <!-- <article class="press2">
-                <img class="" src="./images/mobile/gls-amg-mobile.jpg">
-                <h3>The new Mercedes-AMG GLS 63 4MATIC+ [2]</h3>
-                <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-            </article>
-            <article class="press3">
-                <img class="" src="./images/mobile/glc-amg-mobile.jpg">
-                <h3>The new Mercedes-AMG GLE 63 4MATIC+ Models [2]</h3>
-                <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-            </article>
-            <article class="press4">
-                <img class="" src="./images/mobile/schoenen-mobile.jpg">
-                <h3>Santoni designs new sneaker collection for Mercedes-AMG </h3>
-                <p> Kraftstoffverbrauch kombiniert: 9.3 - 9.1 l/100 km | CO2-Emissionen kombiniert: 213 - 208 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-            </article> -->
-            <footer>
-                
-            </footer>
-        </section>
-        <section class="about-amg">
-            <header>
-                <p>About AMG</p>
-                <hr class="amg-lijn">
-                <h2>Driving Performance</h2>
-            </article>
-        </header>
-        <article class="about1">
-            <img class="" src="./images/mobile/sls-amg-mobile.jpg">
-            <h3>AMG The Story</h3>
-        </article>
-        <article class="about2">
-            <img class="" src="./images/mobile/deapp-mobile.jpg">
-            <h3>AMG TRACK PACE</h3>
-            <p>Kraftstoffverbrauch kombiniert: 12.4 l/100 km | CO<sub class="amg-e-sub">2</sub>-Emissionen kombiniert: 284 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html" class="amg-e-link" target="_blank">Emissionsangabe</a> [1]</p>
-        </article>
-        <article class="about3">
-            <img class="" src="./images/mobile/g63-amg-mobile.jpg">
-            <h3>Performance Center</h3>
-            <p>Two worlds, one aim: Driving Performance</p>
-        </article>
-        <article class="about4">
-            <img class="" src="./images/mobile/magazine-mobile.jpg">
-            <h3>63 Magazine</h3>
-            <p>Welome to the AMG Lifestyle</p>
-        </article>
+            <!-- section 8 -->
+            <section>
+                <header>
+                    <p>About AMG</p>
+                    <hr>
+                    <h2>Driving Performance</h2>
+                </header>
+                  <!-- classes worden alleen gebruikt voor javascript om de carrousel te realiseren -->
+                <article class="about1">
+                    <img src="./images/mobile/sls-amg-mobile.jpg">
+                    <h3>AMG The Story</h3>
+                </article>
+                <article class="about2">
+                    <img src="./images/mobile/deapp-mobile.jpg">
+                    <h3>AMG TRACK PACE</h3>
+                    <p>Kraftstoffverbrauch kombiniert: 12.4 l/100 km | CO<sub>2</sub>-Emissionen kombiniert: 284 g/km | <a href="https://www.mercedes-amg.com/en/footer/emissions-statement.html"  target="_blank">Emissionsangabe</a> [1]</p>
+                </article>
+                <article class="about3">
+                    <img src="./images/mobile/g63-amg-mobile.jpg">
+                    <h3>Performance Center</h3>
+                    <p>Two worlds, one aim: Driving Performance</p>
+                </article>
+                <article class="about4">
+                    <img src="./images/mobile/magazine-mobile.jpg">
+                    <h3>63 Magazine</h3>
+                    <p>Welome to the AMG Lifestyle</p>
+                </article>
+            </section>
+        </main>
         <footer>
+            <section>
+                <ul>
+                    <li><a href="#" target="_self">DE</a></li>
+                    <li>/</li>
+                    <li><a href="#" target="_self">EN </a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Media</a></li>
+                    <li><a href="">Provider</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>© 2019 Mercedes-AMG GmbH. All rights reserved.</p>
+                <p>[1] The figures are provided in accordance with the German regulation 'PKW-EnVKV' and apply to the German market only. Further information on official fuel consumption figures and the official specific CO₂ emissions of new passenger cars can be found in the EU guide <a href="https://www.dat.de/fileadmin/media/LeitfadenCO2/GuideCO2.pdf" target="_blank">'Information on the fuel consumption, CO₂ emissions and energy consumption of new cars'</a>, which is available free of charge at all sales dealerships, from DAT Deutsche Automobil Treuhand GmbH and at&nbsp;<a href="https://www.dat.de/en/home.html" target="_blank">www.dat.de</a>.</p>
+                <p>[2]&nbsp;The stated fuel consumption and CO2&nbsp;emission figures are provisional, were determined by the technical service for the certification process in accordance with the WLTP test procedure and correlated as NEDC figures. No EC type approval or certificate of conformity with official figures is yet available. There may be differences between the stated figures and the official figures.</p>
+            </section>
         </footer>
-    </section>
-</main>
-<footer>
-    <section>
-        <ul>
-            <li><a href="#" target="_self">DE</a></li>
-            <li>/</li>
-            <li><a href="#" target="_self">EN </a></li>
-        </ul>
-        <ul>
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
-        </ul>
-        <ul>
-            <li><a href="">Company</a></li>
-            <li><a href="">Media</a></li>
-            <li><a href="">Provider</a></li>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Legal</a></li>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Career</a></li>
-        </ul>
-    </section>
-    <section>
-        <p>© 2019 Mercedes-AMG GmbH. All rights reserved.</p>
-        <p>[1] The figures are provided in accordance with the German regulation 'PKW-EnVKV' and apply to the German market only. Further information on official fuel consumption figures and the official specific CO₂ emissions of new passenger cars can be found in the EU guide <a href="https://www.dat.de/fileadmin/media/LeitfadenCO2/GuideCO2.pdf" target="_blank">'Information on the fuel consumption, CO₂ emissions and energy consumption of new cars'</a>, which is available free of charge at all sales dealerships, from DAT Deutsche Automobil Treuhand GmbH and at&nbsp;<a href="https://www.dat.de/en/home.html" target="_blank">www.dat.de</a>.</p>
-        <p>[2]&nbsp;The stated fuel consumption and CO2&nbsp;emission figures are provisional, were determined by the technical service for the certification process in accordance with the WLTP test procedure and correlated as NEDC figures. No EC type approval or certificate of conformity with official figures is yet available. There may be differences between the stated figures and the official figures.</p>
-    </section>
-</footer>
-</body>
+    </body>
 </html>

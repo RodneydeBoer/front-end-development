@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Rokkitt:100,200,300,400,500,600,700,800,900&display=swap');
-*{
-    transition:all 0.1s ease-in-out;
-    margin:0px;
-    padding:0px;
+
+* {
+    transition: all 0.1s ease-in-out;
+    margin: 0px;
+    padding: 0px;
 }
+
 /*Body*/
-article, section header, .agenda footer p, footer section:nth-child(2){
+article, section header, main > section:nth-of-type(4) footer p, footer section:nth-child(2) {
     width: 90%;
     margin: auto;
 }
-section{
+
+section {
     margin-bottom: 50px;
-    margin-top:15px;
+    margin-top: 15px;
 }
-body{
+
+body {
     color: #fff;
     background: #000000;
     font-weight: 200;
     font-family: 'Rokkitt', serif;
 }
-.amg-button{
+
+.amg-button {
     border: none;
     border-radius: 1px;
     color: #fff;
@@ -32,18 +37,25 @@ body{
     font-weight: 200;
     margin: 10px 0px;
 }
-main{
-    display:block;
+
+main {
+    display: block;
 }
+
 a:visited {
     color: inherit;
 }
-img, video{
-    width:100%;
+
+a:hover {
+    color: #d9252b !important;
+}
+
+img, video {
+    width: 100%;
     height: auto;
 }
 
-.amg-lijn{
+hr {
     margin: 5px 0px;
     display: block;
     width: 40px;
@@ -51,10 +63,12 @@ img, video{
     border: none;
     background: #d9252b;
 }
-#slide2,#slide3{
-    display:none;
+
+#slide2, #slide3 {
+    display: none;
 }
-.amg-button-wit{
+
+.amg-button-wit {
     border: none;
     border-radius: 1px;
     color: #fff;
@@ -67,50 +81,59 @@ img, video{
     font-weight: 200;
     margin: 10px 0px;
 }
-footer section:nth-child(1){
+
+footer section:nth-child(1) {
     background: linear-gradient(to bottom, #262626 0%, #171717 100%);
 }
+
 /*Tekst*/
-.intro h1 {
+main > section:first-of-type h1 {
     font-weight: 200;
-    margin:15px 0px;
+    margin: 15px 0px;
+    font-size: 2.6em;
 }
-h2{
+
+h2 {
     font-weight: 200;
-    margin:15px 0px;
+    margin: 15px 0px;
 }
-h3{
+
+h3 {
     font-weight: 200;
-    margin:15px 0px;
+    margin: 15px 0px;
 }
-p{
+
+p {
     font-weight: 100;
 }
-.intro h1{
-        font-size:2.6em;
-}
-p.beschrijving a{
-    color:white;
+
+p.beschrijving a {
+    color: white;
     cursor: pointer;
 }
-.vehicles p{
+
+main > section:nth-of-type(3) p {
     color: #a8a8a8;
     text-align: left;
-    font-size:14px;
+    font-size: 14px;
 }
-.vehicles p a{
-    color:white;
+
+main > section:nth-of-type(3) p a {
+    color: white;
     cursor: pointer;
 }
-section.verbruik{
-    color:#e8e8e8;
+
+main > section:nth-of-type(2) {
+    color: #e8e8e8;
     text-align: left;
     font-style: italic;
 }
-.wit{
-    color:white;
+
+.wit {
+    color: white;
     font-weight: bold;
 }
+
 p.beschrijving {
     color: #a8a8a8;
     text-align: center;
@@ -118,134 +141,162 @@ p.beschrijving {
     padding-right: 5%;
     font-size: 14px;
 }
-section.agenda p:nth-child(2) {
+
+section  main > section:nth-of-type(4) p:nth-child(2) {
     color: #adadad;
-    FONT-WEIGHT: 100;
+    font-weight: 100;
 }
-footer section:nth-child(2) p{
+
+footer section:nth-child(2) p {
     margin: 10px 0px;
 }
-footer section:nth-child(1) a{
+
+footer section:nth-child(1) a {
     text-decoration: none;
 }
-footer section:nth-child(2) a{
+
+footer section:nth-child(2) a {
     color: white;
 }
+
 /*Footer*/
-footer section:nth-child(2){
-    font-size:14px;
+footer section:nth-child(2) {
+    font-size: 14px;
 }
+
 footer section ul:nth-child(3) li:after {
     content: " | ";
     margin: 0 15px;
 }
-footer section{
-    color:#999999;
-    margin-bottom: 0px!important;
+
+footer section {
+    color: #999999;
+    margin-bottom: 0px !important;
 }
-footer section:nth-child(1) ul li{
+
+footer section:nth-child(1) ul li {
     display: inline-block;
 }
-footer section:nth-child(1){
+
+footer section:nth-child(1) {
     background: linear-gradient(to bottom, #262626 0%, #171717 100%);
     padding: 0 5%;
 }
-footer section:nth-child(1) ul{
+
+footer section:nth-child(1) ul {
     padding: 20px 0;
     text-align: center;
     margin: auto;
     display: inline-block;
 }
-footer section:nth-child(1) ul li{
+
+footer section:nth-child(1) ul li {
     display: inline-block;
 }
- footer section ul:nth-child(1){
+
+footer section ul:nth-child(1) {
     float: left;
     text-align: left;
 }
-footer section ul:nth-child(2){
+
+footer section ul:nth-child(2) {
     font-size: 30px;
     color: #999999;
-    text-align: right; 
+    text-align: right;
 }
-footer section ul:nth-child(3){
+
+footer section ul:nth-child(3) {
     color: #999999;
-    text-align: right; 
+    text-align: right;
 }
+
 /*Tekst*/
-footer section:nth-child(2){
+footer section:nth-child(2) {
     font-size: 14px;
     color: #999999;
     padding: 30px 5%;
     display: inline-block;
 }
-div.userdeel{
+
+body > header > div:nth-of-type(2) {
     -webkit-transform: skewX(-23deg);
     transform: skewX(-23deg);
     border-left: 2px solid red;
     height: 80px;
     width: 50px;
 }
-.userdeel i{
+
+body > header > div:nth-of-type(2) i {
     -webkit-transform: skewX(23deg);
     transform: skewX(23deg);
-    font-size:30px;
+    font-size: 30px;
 }
-.userdeel a{
+
+body > header > div:nth-of-type(2) a {
     margin: 29px 15px;
     display: block;
     color: #a8a8a8;
 }
-div.onderelkaar{
+
+body > header div:first-of-type {
     width: 30%;
     text-align: end;
     margin-right: 35px;
     height: 100%;
     flex: auto;
 }
-ul.iconmenu{
+
+body > header > div ul:first-of-type {
     margin-top: 10px;
     vertical-align: top;
 }
-ul.iconmenu li{
+
+body > header > div > ul > li {
     display: inline-block;
     margin-left: 30px;
     vertical-align: top;
-    font-size:20px;
-    color:#a8a8a8;
+    font-size: 20px;
+    color: #a8a8a8;
 }
-header.topnav span{
-        margin-left:8px;
-        font-size: 14px;
-        color: #a8a8a8;
+
+body > header span {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #a8a8a8;
 }
-@media screen and (min-width: 1280px){
-    div.onderelkaar{
-    width: 70%;
-    text-align: end;
-    margin-right: 35px;
-    height: 100%;
-    flex: auto;
+
+@media screen and (min-width:1280px) {
+    body > header div:first-of-type {
+        width: 70%;
+        text-align: end;
+        margin-right: 35px;
+        height: 100%;
+        flex: auto;
     }
-    header #logo {
-    width: 65%;
-    height: 100%;
-    margin: auto 0;
-    float: left;
+
+    body > header img:first-of-type {
+        width: 65%;
+        height: 100%;
+        margin: auto 0;
+        float: left;
     }
-    #mijnlinks{
+
+    body > header div nav {
         display: inline-block;
         color: white;
     }
-    #mijnlinks a{
+
+    body > header div nav  a {
         color: white;
         font-size: 14px;
     }
-    .iconburger{
+
+    body > header > div:first-of-type  > a:nth-of-type(1) {
         display: none;
     }
+
     /*Navbar*/
-    header.topnav {
+    body > header {
         height: 100px;
         width: 78%;
         margin: auto;
@@ -253,34 +304,41 @@ header.topnav span{
         justify-content: space-between;
         color: #ffffff;
     }
-    header nav{
+
+    header nav {
         margin: auto 0;
     }
-    header nav a{
+
+    header nav a {
         padding: 7px 10px 7px 27px;
         color: #e5edf4;
         text-decoration: none;
         text-align: right;
         font-weight: 200;
-    }  
-    header nav a:hover{
+    }
+
+    header nav a:hover {
         background-color: #d9252b;
         border-bottom: 5px solid red;
+        color: white !important;
     }
-    header nav ul:first-child a:first-child{
-       color: #a8a8a8;
-       font-size:14px;
+
+    header nav ul:first-child a:first-child {
+        font-size: 14px;
     }
-    nav ul{
+
+    nav ul {
         list-style: none;
         cursor: default;
         justify-content: flex-end;
         display: flex;
         margin: 15px 0px;
     }
+
     /**/
+
     /*main*/
-    .amg-button{
+    .amg-button {
         border: none;
         border-radius: 1px;
         color: #fff;
@@ -292,95 +350,118 @@ header.topnav span{
         display: inline-block;
         font-weight: 200;
     }
-    .amg-button:hover{
+
+    .amg-button:hover {
         border: 1px solid #d9252b;
         background-color: #d9252b;
         box-shadow: 0 0 16px 0 #d9252b;
+        color: white !important;
     }
+
+    footer section:nth-child(2) {
+        width: 60% !important;
+        margin-left: 7% !important;
+    }
+
 }
-@media screen and (max-width: 1280px){
-    header.topnav {
+
+@media screen and (max-width:1280px) {
+    header:first-of-type {
         height: 80px;
         width: auto;
         display: flex;
         align-items: center;
-        margin-left:25px;
+        margin-left: 25px;
     }
-    nav#mijnlinks ul{
-        list-style:none;
+
+    body > header div nav  ul {
+        list-style: none;
     }
-    nav#mijnlinks ul li a{
-        color:white; 
+
+    body > header div nav  ul li a {
+        color: white;
         display: block;
         padding: 14px 31px;
         border-bottom: 1px solid #3c3c3c;
         text-decoration: none;
     }
 
-    header nav{
+    header nav {
         margin: auto 0;
     }
-    header #logo{
+
+    body > header img:first-of-type {
         width: 141px;
         height: 100%;
         margin: auto 0;
-        float:left;
-    }  
-    .iconburger{
-        font-size:20px;
-        vertical-align:super;
+        float: left;
     }
-    .iconburger i{
-        margin-top:15px;
+
+    body > header > div:first-of-type > a:nth-of-type(1) {
+        font-size: 20px;
+        vertical-align: super;
     }
-    #mijnlinks a:hover {
+
+    body > header > div:first-of-type > a:nth-of-type(1) i {
+        margin-top: 15px;
+    }
+
+    body > header div nav  a:hover {
         background-color: #ddd;
         color: red;
     }
-    
-    .agenda{
-        margin-bottom: 10px!important;
+
+    main > section:nth-of-type(4) {
+        margin-bottom: 10px !important;
     }
-    .agenda-items p{
-        font-weight:100;
+
+    main > section:nth-of-type(5) p {
+        font-weight: 100;
     }
-    .agenda-items article p,.agenda-items article h3{
+
+    main > section:nth-of-type(5) article p, main > section:nth-of-type(5) article h3 {
         width: 90%;
         display: inline-block;
         margin-right: 10px;
     }
-    
-    .agenda-items article{
+
+    main > section:nth-of-type(5) article {
         border-top: 1px solid #494949;
         padding-top: 30px;
         padding-bottom: 30px
     }
+
 }
-@media screen and (max-width: 1280px) and (min-width: 767px) {
-    nav#mijnlinks {
-    display: none;
-    border-top: 6px solid #d9252b;
-    font-size: 17px;
-    position: fixed;
-    top: 80px;
-    right: 80PX;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 320PX;
-    background-color: #1f1f1f;
-    text-align: center;
+
+@media screen and (max-width:1280px) and (min-width:767px) {
+    body > header div nav {
+        display: none;
+        border-top: 6px solid #d9252b;
+        font-size: 17px;
+        position: fixed;
+        top: 80px;
+        right: 80PX;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 320PX;
+        background-color: #1f1f1f;
+        text-align: center;
     }
+
 }
-@media screen and (min-width: 1023px){
-    .intro footer{
+
+@media screen and (min-width:1023px) {
+    main > section:first-of-type footer {
         position: absolute;
         width: 100%;
-        bottom:10%;
+        bottom: 10%;
     }
-    .slidefoto{
-        display:none;
+
+    main > section:first-of-type footer img {
+        display: none;
     }
-    .intro{
+
+    main > section:first-of-type {
         background-image: url("../images/gla-45-amg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -389,156 +470,230 @@ header.topnav span{
         width: 100%;
         display: inline-block;
     }
-    .gradient{
-        background:linear-gradient(#000, transparent 150px, transparent calc(100% - 150px), #000);
-        height:76vh;
-        padding-top:35px;
+
+    main > section:first-of-type div:first-of-type {
+        background: linear-gradient(#000, transparent 150px, transparent calc(100% - 150px), #000);
+        height: 77vh;
+        padding-top: 35px;
         width: 100%;
-        display:inline-block;
+        display: inline-block;
     }
-    .intro article{
+
+    main > section:first-of-type article {
         background: rgba(0, 0, 0, 0.7);
         margin-top: 15px;
         margin-left: 10%;
         width: 460px;
-        padding:14px;
+        padding: 14px;
     }
-    .intro h1{
+
+    main > section:first-of-type h1 {
         line-height: 48px;
         margin: 20px 0px;
         font-weight: 200;
     }
- 
-    .intro p{
-        font-size:18px;
-        margin-top:15px;
+
+    main > section:first-of-type p {
+        font-size: 18px;
+        margin-top: 15px;
     }
 
-    .vehicles, .about-amg{
-        grid-template-columns: repeat(4, minmax(25%, 1fr) )!important;
+    main > section:nth-of-type(3), section:nth-of-type(8) {
+        grid-template-columns: repeat(4, minmax(25%, 1fr)) !important;
     }
-    .vehicles header,.about-amg header{
+
+    main > section:nth-of-type(3) header, section:nth-of-type(8) header {
         grid-row: 1;
     }
-    .vehicles article, .about-amg article{
+
+    main > section:nth-of-type(3) article, section:nth-of-type(8) article {
         grid-row: 2;
     }
-    article, section header, .agenda footer p, footer section:nth-child(2){
+
+    article, section header, main > section:nth-of-type(4) footer p {
         width: 80%;
         margin: auto;
     }
-    .agenda{
-        width:80%;
+
+    footer section:nth-child(2) {
+        width: 70%;
+        margin-left: 3%;
+    }
+
+    main > section:nth-of-type(4) {
+        width: 80%;
         margin: auto;
         display: block;
+        position: relative;
     }
-    .schuinvlak{
+
+    main > section:nth-of-type(4) p {
+        font-size: 18px;
+    }
+
+    main > section:nth-of-type(4) h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    main > section:nth-of-type(5) a {
+        display: none;
+    }
+
+    .schuinvlak {
         position: absolute;
-        width: 468px;
-        height: 77%;
+        width: 60%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.7);
-        -webkit-transform: skew(-36deg);
-        transform: skew(-36deg);
-        -webkit-transform-origin: top;
+        clip-path: polygon(0 0, 100% 0, 30% 100%, 0% 100%);
     }
-    .schuinvlak p, .schuinvlak hr, .schuinvlak a, .schuinvlak h2 {
-        -webkit-transform: skew(36deg);
-        transform: skew(36deg);
-        -webkit-transform-origin: top;
-        max-width: 300px;
+
+    .rechtvlak {
+        width: 60%;
+        max-width: 440px;
+        padding: 25% 0;
     }
-    footer section:nth-child(1){
+
+    main > section:nth-of-type(7) article {
+        display: grid;
+    }
+
+    main > section:nth-of-type(7) article img {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    main > section:nth-of-type(7) .press1 p:nth-child(2) {
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    }
+
+    main > section:nth-of-type(7) .press1 p:first-child {
+        grid-column: 1;
+        grid-row: 2;
+        color: red !important;
+    }
+
+    main > section:nth-of-type(7) article h3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    footer section:nth-child(1) {
         display: flex;
     }
-    footer section ul{
+
+    footer section ul {
         width: auto;
     }
-    .agenda-items{
+
+    main > section:nth-of-type(5) {
         display: grid;
         grid-column-gap: 15px;
-        grid-template-columns: repeat(4, minmax(25%, 1fr) );
+        grid-template-columns: repeat(4, minmax(25%, 1fr));
         padding: 0 10%;
     }
-    .agenda-items article{
+
+    main > section:nth-of-type(5) article {
         margin: unset;
-        width: 100% ;
-    }   
+        width: 100%;
+    }
+
 }
-@media screen and (max-width:1022px){
-    .schuinvlak{
+
+@media screen and (max-width:1022px) {
+    .schuinvlak {
         padding: 25px 0px;
         width: 80%;
         margin: auto;
     }
-    footer section ul:nth-child(1){
+
+    footer section ul:nth-child(1) {
         width: 50%;
         float: left;
         text-align: left;
         display: inline-block;
     }
-    footer section ul:nth-child(2){
+
+    footer section ul:nth-child(2) {
         font-size: 30px;
         color: #999999;
         width: 50%;
         float: left;
-        text-align: right; 
-        display:inline-block;
+        text-align: right;
+        display: inline-block;
     }
+
     footer section ul:nth-child(3) {
         color: #999999;
         text-align: center;
         width: 100%;
     }
-    .agenda-items article{
+
+    main > section:nth-of-type(5) article {
         display: grid;
         grid-column-gap: 15px;
-        grid-template-columns: repeat( auto-fit, minmax(25%, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
-    .agenda-items img{
+
+    main > section:nth-of-type(5) img {
         grid-column: 1;
         grid-row: 1 / span 2;
     }
-    .agenda-items article h3, .agenda-items article p{
+
+    main > section:nth-of-type(5) article h3, main > section:nth-of-type(5) article p {
         grid-column: 2 / span 2;
     }
-    .agenda-items a{
+
+    main > section:nth-of-type(5) a {
         grid-column: 4;
         margin: auto;
         grid-row: 1 / span 2;
         font-size: 30px;
         text-decoration: none;
     }
+
     /* Alles */
-    .grijs{
-        background-color: #202020;;
+    .grijs {
+        background-color: #202020;
     }
+
     /*header*/
+
     /*main*/
-    /*Footer*/ 
+
+    /*Footer*/
 }
-@media screen and (min-width:767px){
-    .about-amg article{
+
+@media screen and (min-width:767px) {
+    section:nth-of-type(8) article {
         margin: unset;
     }
-    .agenda .amg-button-mobile{
+
+    main > section:nth-of-type(4) .amg-button-mobile {
         display: none;
     }
-    .vehicles, .about-amg{
+
+    main > section:nth-of-type(3), section:nth-of-type(8) {
         display: grid;
         grid-column-gap: 15px;
-        grid-row-gap:30px;
-        grid-template-columns: repeat(2, minmax(50%, 1fr) );
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
         padding: 0 10%;
     }
-    .vehicles header,.about-amg header{
+
+    main > section:nth-of-type(3) header, section:nth-of-type(8) header {
         grid-column: 1 / span 2;
     }
-    .vehicles article,.vehicles header, .about-amg article, .about-amg header{
+
+    main > section:nth-of-type(3) article, main > section:nth-of-type(3) header, section:nth-of-type(8) article, section:nth-of-type(8) header {
         width: 100%;
     }
+
 }
-@media screen and (max-width: 766px){
-    nav#mijnlinks {
+
+@media screen and (max-width:766px) {
+    body > header div nav {
         display: none;
         border-top: 6px solid #d9252b;
         font-size: 17px;
@@ -548,23 +703,28 @@ header.topnav span{
         overflow-x: hidden;
         overflow-y: auto;
         width: 100%;
-        background-color:#1f1f1f;
+        background-color: #1f1f1f;
         text-align: center;
     }
-    .agenda h2{
+
+    main > section:nth-of-type(4) h2 {
         width: 85%;
         display: inline-block;
     }
+
     /*HEADER*/
-    header.topnav span{
-        display: none;
-    } 
-    /**/
-    /*MAIN*/
-    .agenda-items img{
+    header:first-of-type span {
         display: none;
     }
-    .agenda .amg-button-mobile{
+
+    /**/
+
+    /*MAIN*/
+    main > section:nth-of-type(5) img {
+        display: none;
+    }
+
+    main > section:nth-of-type(4) .amg-button-mobile {
         display: inline-block;
         border: none;
         border-radius: 1px;
@@ -579,91 +739,111 @@ header.topnav span{
         font-size: 35px;
     }
 
-    .agenda-items article .amg-button-mobile{
+    main > section:nth-of-type(5) article .amg-button-mobile {
         display: inline-block;
-        border: none;     
+        border: none;
         margin: 10px 0px;
         font-size: 30px;
         vertical-align: top;
         margin: auto;
         text-decoration: none;
     }
-    .agenda .amg-button{
+
+    main > section:nth-of-type(4) .amg-button {
         display: none;
     }
-    .slidefoto{
+
+    main > section:first-of-type footer img {
         width: 100%;
         height: auto;
     }
-    .agenda header{
+
+    main > section:nth-of-type(4) header {
         width: 90%;
         margin: auto;
         padding: 15px 0px;
     }
-    .agenda{
+
+    main > section:nth-of-type(4) {
         background-color: #202020;
     }
-    .agenda img{
+
+    main > section:nth-of-type(4) img {
         margin-top: 20px;
     }
-    
-    .intro h1 {
+
+    main > section:first-of-type h1 {
         font-size: 1.5rem;
         line-height: 1.5rem;
         font-weight: 200;
-        margin:15px 0px;
+        margin: 15px 0px;
     }
-    h2{
+
+    h2 {
         font-size: 25px;
         line-height: 25px;
         font-weight: 200;
-        margin:15px 0px;
+        margin: 15px 0px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
         line-height: 20px;
         font-weight: 200;
-        margin:15px 0px;
+        margin: 15px 0px;
     }
+
 }
-@media screen and (max-width: 480px){
-    footer section:nth-child(1){
+
+@media screen and (max-width:480px) {
+    footer section:nth-child(1) {
         background: linear-gradient(to bottom, #262626 0%, #171717 100%);
     }
-    footer section:nth-child(1) ul{
+
+    footer section:nth-child(1) ul {
         padding: 30px 0;
         text-align: center;
         width: 100%;
         margin: auto;
     }
-    footer section:nth-child(1) ul li{
+
+    footer section:nth-child(1) ul li {
         display: inline-block;
     }
-    footer section ul:nth-child(2){
+
+    footer section ul:nth-child(2) {
         font-size: 30px;
         color: #999999;
         border-bottom: 1px solid #494949;
     }
-     footer section ul:nth-child(1){
+
+    footer section ul:nth-child(1) {
         border-bottom: 1px solid #494949;
     }
+
     /*Tekst*/
-    footer section:nth-child(2){
-        font-size:14px;
-        color:#999999;
+    footer section:nth-child(2) {
+        font-size: 14px;
+        color: #999999;
     }
-    footer section:nth-child(2) p{
+
+    footer section:nth-child(2) p {
         margin: 10px 0px;
     }
-    footer section:nth-child(2) a{
+
+    footer section:nth-child(2) a {
         color: white;
     }
+
 }
-@media screen and (max-width: 355px){
+
+@media screen and (max-width:355px) {
     ul.iconmenu li {
-    margin-left: 15px;
+        margin-left: 15px;
     }
-    div.onderelkaar {
-    margin-right: 20px;
+
+    body > header div:first-of-type {
+        margin-right: 20px;
     }
+
 }
