@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link href="../styles/main.css" rel="stylesheet" />
+        <link rel='shortcut icon' type='image/x-icon' href='./images/mercedes-benz.png' />
+        <meta charset="utf-8" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Contact Rodney AMG</title>
+    </head>
+    <body id="contact">
+        <header>
+            <!-- Het logo -->
+            <a href="../index.html" ><img src="../images/amg-logo.svg"/></a>
+            <!-- topmenu met icons -->
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa fa-info-circle"></i><span>Provider/Privacy</span></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+                <!-- Hamburger menu -->
+                <a href="#" onclick="hamburgermenu()"><i class="fa fa-bars"></i> </a>
+                <!-- onderstaande ID moet blijven staan voor javascript. Niet voor css -->
+                <nav id="mijnlinks">
+                    <ul>
+                        <li>
+                            <a href="#">Driving Performance</a>
+                        </li>
+                        <li>
+                            <a href="#">Vehicles</a>
+                        </li>
+                        <li>
+                            <a href="#">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#">Get your AMG</a>
+                        </li>
+                        <li>
+                            <a href="#">Owner</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Het user-icoon in de header -->
+            <div>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <header>
+                    <h1> Contact</h1>
+                </header>
+                <article>
+                    <form action="mailto:rodneydeboer1@hotmail.com" method="POST">
+                        <fieldset>
+                            <legend>Personalia</legend>
+                            <label for="Voornaam">Voornaam</label>
+                            <input type="text" required="yes" name="Voornaam" minlength="2" maxlength="30" placeholder="...">
+                            <label for="Achternaam">Achternaam</label>
+                            <input type="text" required="yes" name="Achternaam">
+                            <label for="Geboortedatum">Geboortedatum</label>
+                            <input type="date" required="yes" name="Geboortedatum">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Adres gegevens</legend>
+                            <label for="straat">Straat</label>
+                            <input type="text" required="yes" name="straat">
+                            <label for="huisnummer">Huisnummer</label>
+                            <input type="text" required="yes" maxlength="4" size="4" name="huisnummer">
+                            <label for="plaats">Plaats</label>
+                            <input type="text" required="yes" name="plaats">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Het bericht</legend>
+                            <input type="text" required="yes" height="80" size="23" name="plaats">
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <ul>
+                    <li><a href="#" target="_self">DE</a></li>
+                    <li>/</li>
+                    <li><a href="#" target="_self">EN </a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Media</a></li>
+                    <li><a href="">Provider</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>© 2019 Mercedes-AMG GmbH. All rights reserved.</p>
+                <p>[1] The figures are provided in accordance with the German regulation 'PKW-EnVKV' and apply to the German market only. Further information on official fuel consumption figures and the official specific CO₂ emissions of new passenger cars can be found in the EU guide <a href="https://www.dat.de/fileadmin/media/LeitfadenCO2/GuideCO2.pdf" target="_blank">'Information on the fuel consumption, CO₂ emissions and energy consumption of new cars'</a>, which is available free of charge at all sales dealerships, from DAT Deutsche Automobil Treuhand GmbH and at&nbsp;<a href="https://www.dat.de/en/home.html" target="_blank">www.dat.de</a>.</p>
+                <p>[2]&nbsp;The stated fuel consumption and CO2&nbsp;emission figures are provisional, were determined by the technical service for the certification process in accordance with the WLTP test procedure and correlated as NEDC figures. No EC type approval or certificate of conformity with official figures is yet available. There may be differences between the stated figures and the official figures.</p>
+            </section>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../Scripts/mijnscript.js"></script>
+    </body>
+</html>
