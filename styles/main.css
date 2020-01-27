@@ -6,10 +6,7 @@
 }
 
 /*Body*/
-article,
-section header,
-main > section:nth-of-type(4) footer p,
-footer section:nth-child(2) {
+article, section header, main > section:nth-of-type(4) footer p, footer section:nth-child(2) {
     width: 90%;
     margin: auto;
 }
@@ -24,14 +21,8 @@ body {
     background: #000000;
     font-weight: 200;
     font-family: 'Rokkitt', serif;
-    opacity: 0.1;
-    transition:2s;
 }
-/* voor het infaden van de pagina*/
-.infaden{
-    opacity:1!important;
-    transition:2s;
-}
+
 /*de rode button*/
 .amg-button {
     border: none;
@@ -46,13 +37,22 @@ body {
     font-weight: 200;
     margin: 10px 0px;
 }
+
 main {
     display: block;
+    opacity: 0.1;
+    transition: 2s;
+}
+
+/* voor het infaden van de pagina*/
+.infaden {
+    opacity: 1 !important;
+    transition: 2s;
 }
 
 /*links*/
 a:visited {
-    color: white!important;
+    color: white !important;
 }
 
 a:hover {
@@ -60,11 +60,11 @@ a:hover {
 }
 
 /*video over amg*/
-img,
-video {
+img, video {
     width: 100%;
     height: auto;
 }
+
 /*de kleine rode lijn*/
 hr {
     margin: 5px 0px;
@@ -74,6 +74,7 @@ hr {
     border: none;
     background: #d9252b;
 }
+
 /*de witte button bij de video*/
 .amg-button-wit {
     border: none;
@@ -101,9 +102,44 @@ form label {
 form input[type=text] {
     padding: 5px;
     font-size: 16px;
-    background:;
+    width: 70%;
 }
 
+form input {
+    margin: 10px 5px;
+}
+
+input {
+    opacity: 0.4;
+}
+
+/*Wanneer de input geselecteerd is*/
+input:focus {
+    opacity: 1;
+    transition: 0.7s;
+    outline: green;
+}
+
+/*Wanneer de input goed is*/
+input:valid {
+    opacity: 1;
+    transition: 1s;
+    border: 3px solid green;
+}
+
+/*Wanneer de input fout  is*/
+input:invalid {
+    outline: red;
+}
+
+/*Wanneer de input goed is*/
+fieldset:valid {
+    border: 1px solid green;
+    transition: 1.2s;
+    color: green;
+}
+
+/*Submit button*/
 input[type=submit] {
     border: none;
     border-radius: 1px;
@@ -115,7 +151,8 @@ input[type=submit] {
     background-color: #d9252b;
     display: inline-block;
     font-weight: 200;
-    margin: 10px 0px;
+    margin: 20px 15px;
+    width: 40%;
 }
 
 input[type=submit]:hover {
@@ -127,12 +164,19 @@ input[type=submit]:hover {
 
 form fieldset {
     padding: 20px;
-    border: 1px solid red;
+    border: 1px solid white;
+    margin: 15px;
+}
+
+form legend {
+    font-size: 25px;
+    margin: 0px 10px;
 }
 
 form {
     display: grid;
     background: linear-gradient(to bottom, #262626 0%, #171717 100%);
+    padding: 30px;
 }
 
 form fieldset:nth-of-type(1) {
@@ -156,6 +200,7 @@ main > section:first-of-type h1 {
     margin: 15px 0px;
     font-size: 2.6em;
 }
+
 /*titels*/
 h2 {
     font-weight: 200;
@@ -181,6 +226,7 @@ main > section:nth-of-type(7) > article > p:nth-of-type(2) {
     font-size: 14px;
     margin: 15px 0;
 }
+
 /*teksten*/
 p {
     font-weight: 100;
@@ -220,7 +266,8 @@ p.beschrijving {
     padding-right: 5%;
     font-size: 14px;
 }
-/**/
+
+/*sections*/
 section  main > section:nth-of-type(4) p:nth-child(2) {
     color: #adadad;
     font-weight: 100;
@@ -243,6 +290,7 @@ footer section:nth-child(2) {
     font-size: 14px;
 }
 
+/*de scheidingslijn in de balk bij menu*/
 footer section ul:nth-child(3) li:after {
     content: " | ";
     margin: 0 15px;
@@ -289,7 +337,6 @@ footer section ul:nth-child(3) {
     text-align: right;
 }
 
-/*Tekst*/
 footer section:nth-child(2) {
     font-size: 14px;
     color: #999999;
@@ -297,6 +344,7 @@ footer section:nth-child(2) {
     display: inline-block;
 }
 
+/*schuine div rechtsbovenaan de header*/
 body > header > div:nth-of-type(2) {
     -webkit-transform: skewX(-23deg);
     transform: skewX(-23deg);
@@ -348,6 +396,7 @@ body > header span {
     color: #a8a8a8;
 }
 
+/*voor schermen boven de 1280px*/
 @media screen and (min-width:1280px) {
     body > header div:first-of-type {
         width: 70%;
@@ -418,9 +467,7 @@ body > header span {
         margin: 15px 0px;
     }
 
-    /**/
-
-    /*main*/
+    /* de rode amg button*/
     .amg-button {
         border: none;
         border-radius: 1px;
@@ -434,13 +481,14 @@ body > header span {
         font-weight: 200;
     }
 
-    .amg-button:hover , .amg-button-wit:hover {
+    .amg-button:hover, .amg-button-wit:hover {
         border: 1px solid #d9252b;
         background-color: #d9252b;
         box-shadow: 0 0 16px 0 #d9252b;
         color: white !important;
     }
 
+    /*footer*/
     footer section:nth-child(2) {
         width: 60% !important;
         margin-left: 7% !important;
@@ -448,6 +496,7 @@ body > header span {
 
 }
 
+/*voor schermen onder de 1280px */
 @media screen and (max-width:1280px) {
     body > header:first-of-type {
         height: 80px;
@@ -457,6 +506,7 @@ body > header span {
         margin-left: 25px;
     }
 
+    /*header*/
     body > header div nav  ul {
         list-style: none;
     }
@@ -494,6 +544,7 @@ body > header span {
         color: red;
     }
 
+    /*sections*/
     main > section:nth-of-type(4) {
         margin-bottom: 10px !important;
     }
@@ -502,8 +553,7 @@ body > header span {
         font-weight: 100;
     }
 
-    main > section:nth-of-type(5) article p,
-    main > section:nth-of-type(5) article h3 {
+    main > section:nth-of-type(5) article p, main > section:nth-of-type(5) article h3 {
         width: 90%;
         display: inline-block;
         margin-right: 10px;
@@ -517,6 +567,7 @@ body > header span {
 
 }
 
+/*voor schermen onder de 1280px en boven de 767px*/
 @media screen and (max-width:1280px) and (min-width:767px) {
     body > header div nav {
         display: none;
@@ -534,11 +585,13 @@ body > header span {
 
 }
 
+/*voor schermen onder de 1023px*/
 @media screen and (min-width:1023px) {
     main > section:nth-of-type(4) footer p {
         display: none;
     }
 
+    /*sections*/
     main > section:nth-of-type(4) p:first-of-type {
         position: absolute;
         bottom: 70px;
@@ -558,6 +611,7 @@ body > header span {
         display: none;
     }
 
+    /*voor de homepagina*/
     #home > main > section:first-of-type {
         background-image: url("../images/gla-45-amg.jpg");
         background-repeat: no-repeat;
@@ -573,7 +627,7 @@ body > header span {
         display: inline-block;
     }
 
-    main > section:first-of-type article {
+    #home main > section:first-of-type article {
         background: rgba(0, 0, 0, 0.7);
         margin-top: 15px;
         margin-left: 10%;
@@ -611,24 +665,19 @@ body > header span {
         margin-top: 15px;
     }
 
-    main > section:nth-of-type(3),
-    section:nth-of-type(8) {
+    main > section:nth-of-type(3), section:nth-of-type(8) {
         grid-template-columns: repeat(4, minmax(25%, 1fr)) !important;
     }
 
-    main > section:nth-of-type(3) header,
-    section:nth-of-type(8) header {
+    main > section:nth-of-type(3) header, section:nth-of-type(8) header {
         grid-row: 1;
     }
 
-    main > section:nth-of-type(3) article,
-    section:nth-of-type(8) article {
+    main > section:nth-of-type(3) article, section:nth-of-type(8) article {
         grid-row: 2;
     }
 
-    article,
-    section header,
-    main > section:nth-of-type(4) footer p {
+    article, section header, main > section:nth-of-type(4) footer p {
         width: 80%;
         margin: auto;
     }
@@ -712,6 +761,7 @@ body > header span {
         grid-row: 1;
     }
 
+    /*footer*/
     footer section:nth-child(1) {
         display: flex;
     }
@@ -736,6 +786,10 @@ body > header span {
 }
 
 @media screen and (max-width:1022px) {
+    form input[type=text] {
+        width: 80%;
+    }
+
     main > section:nth-of-type(6) div {
         display: none;
     }
@@ -787,8 +841,7 @@ body > header span {
         grid-row: 1 / span 2;
     }
 
-    main > section:nth-of-type(5) article h3,
-    main > section:nth-of-type(5) article p {
+    main > section:nth-of-type(5) article h3, main > section:nth-of-type(5) article p {
         grid-column: 2 / span 2;
     }
 
@@ -815,8 +868,7 @@ body > header span {
         display: none;
     }
 
-    main > section:nth-of-type(3),
-    section:nth-of-type(8) {
+    main > section:nth-of-type(3), section:nth-of-type(8) {
         display: grid;
         grid-column-gap: 15px;
         grid-row-gap: 30px;
@@ -825,15 +877,11 @@ body > header span {
         row-gap: 1px;
     }
 
-    main > section:nth-of-type(3) header,
-    section:nth-of-type(8) header {
+    main > section:nth-of-type(3) header, section:nth-of-type(8) header {
         grid-column: 1 / span 2;
     }
 
-    main > section:nth-of-type(3) article,
-    main > section:nth-of-type(3) header,
-    section:nth-of-type(8) article,
-    section:nth-of-type(8) header {
+    main > section:nth-of-type(3) article, main > section:nth-of-type(3) header, section:nth-of-type(8) article, section:nth-of-type(8) header {
         width: 100%;
     }
 
@@ -865,6 +913,11 @@ body > header span {
 
     main > section:nth-of-type(5) img {
         display: none;
+    }
+
+    form legend {
+        font-size: 17px;
+        margin: 0px;
     }
 
     main > section:nth-of-type(4) .amg-button-mobile {
@@ -934,6 +987,24 @@ body > header span {
         line-height: 20px;
         font-weight: 200;
         margin: 15px 0px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    #contact form fieldset:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #contact form fieldset:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contact form fieldset:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
     }
 
 }

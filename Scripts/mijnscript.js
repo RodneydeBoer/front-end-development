@@ -1,6 +1,8 @@
+
+// Functie voor het infaden van MAIN
 window.onload = function(){
-  var body = document.getElementById("home");
-  body.classList.add("infaden");
+  var main = document.getElementsByTagName("MAIN")[0];
+  main.classList.add("infaden");
 }
 
 //  functie voor het hamburgermenu
@@ -12,16 +14,3 @@ function hamburgermenu() {
     x.style.display = "block";
   }
 }
-
-// // Javascript checkt hoe breed het scherm is, omdat pas vanaf 770px de carousels te zien zijn
-// function schermformaat(x) {
-//   if (x.matches) { // If media query matches
-//     document.body.style.backgroundColor = "gray";
-//   } else {
-//     document.body.style.backgroundColor = "black";
-//   }
-// }
-
-// var x = window.matchMedia("(max-width: 70px)")
-// schermformaat(x) // Call listener function at run time
-// x.addListener(schermformaat) // Attach listener function on state changes
