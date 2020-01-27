@@ -1,7 +1,7 @@
-// body staat op display none en wordt hierdoor langzaam ingefade
-$(function() {
-    $('body').fadeIn(1300);
-});
+window.onload = function(){
+  var body = document.getElementById("home");
+  body.classList.add("infaden");
+}
 
 //  functie voor het hamburgermenu
 function hamburgermenu() {
@@ -13,15 +13,15 @@ function hamburgermenu() {
   }
 }
 
-// Javascript checkt hoe breed het scherm is, omdat pas vanaf 770px de carousels te zien zijn
-function schermformaat(x) {
-  if (x.matches) { // If media query matches
-    document.body.style.backgroundColor = "gray";
-  } else {
-    document.body.style.backgroundColor = "black";
-  }
-}
+// // Javascript checkt hoe breed het scherm is, omdat pas vanaf 770px de carousels te zien zijn
+// function schermformaat(x) {
+//   if (x.matches) { // If media query matches
+//     document.body.style.backgroundColor = "gray";
+//   } else {
+//     document.body.style.backgroundColor = "black";
+//   }
+// }
 
-var x = window.matchMedia("(max-width: 70px)")
-schermformaat(x) // Call listener function at run time
-x.addListener(schermformaat) // Attach listener function on state changes
+// var x = window.matchMedia("(max-width: 70px)")
+// schermformaat(x) // Call listener function at run time
+// x.addListener(schermformaat) // Attach listener function on state changes
