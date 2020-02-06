@@ -1,6 +1,6 @@
 De live website staat op :
 
-https://rodneydeboer.github.io/front-end-development/
+https://rodneydeboer.github.io/mercedes-amg-website/
 
 
 Ik heb de site van Mercedes AMG nagemaakt:
